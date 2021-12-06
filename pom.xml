@@ -38,27 +38,4 @@
 		</dependency>
 	</dependencies>
 
-	<repositories>
-		<repository>
-			<id>git-mvn-repo</id>
-			<name>github repository</name>
-			<url>https://raw.githubusercontent.com/luc13-13/maven-releases/master</url>
-			<releases>
-				<enabled>true</enabled>
-				<checksumPolicy>warn</checksumPolicy>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>always</updatePolicy>
-				<checksumPolicy>warn</checksumPolicy>
-			</snapshots>
-		</repository>
-	</repositories>
-	<distributionManagement>
-		<repository>
-			<id>local-mvn-repo</id>
-			<url>file:D:\java-2021-03\Maven\repository</url>
-		</repository>
-	</distributionManagement>
-
 </project>
