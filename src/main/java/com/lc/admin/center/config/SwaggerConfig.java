@@ -30,7 +30,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
                         .build())
                 .select()
                 .paths(PathSelectors.any())
-                .apis(RequestHandlerSelectors.basePackage("com.lc.admin.center"))
+                .apis(RequestHandlerSelectors.basePackage("com.lc.study.shiro.web"))
                 .build();
     }
 
