@@ -1,8 +1,10 @@
 package com.lc.admin.center.web.request;
 
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @author: lucheng
@@ -11,6 +13,8 @@ import lombok.Data;
  */
 @Data
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class LoginRequest {
     @ApiModelProperty(value = "用户名")
     private String userName;

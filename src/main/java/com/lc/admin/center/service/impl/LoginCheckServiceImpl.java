@@ -27,6 +27,6 @@ public class LoginCheckServiceImpl implements LoginCheckService {
             log.info("校验成功，登陆方式为邮箱登陆");
             return true;
         }
-        return false;
+        else throw new IllegalArgumentException("login name is unsupported");
     }
 }

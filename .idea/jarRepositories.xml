@@ -7,6 +7,16 @@
       <option name="url" value="https://repo.maven.apache.org/maven2" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven-releases" />
+      <option name="name" value="maven-releases" />
+      <option name="url" value="http://192.168.223.128:8081/repository/maven-releases/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="archetype" />
       <option name="name" value="archetype" />
       <option name="url" value="file:D:\java-2021-03\Maven\repository" />
@@ -17,9 +27,34 @@
       <option name="url" value="https://raw.githubusercontent.com/luc13-13/maven-releases/master" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="maven-snapshots" />
+      <option name="name" value="maven-snapshots" />
+      <option name="url" value="http://192.168.223.128:8081/repository/maven-releases/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="archetype" />
+      <option name="name" value="archetype" />
+      <option name="url" value="http://192.168.223.128:8081/repository/maven-releases/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="remote" />
+      <option name="name" value="gitRepository" />
+      <option name="url" value="http://192.168.223.128:8081/repository/maven-releases/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="git-mvn-repo" />
       <option name="name" value="github repository" />
       <option name="url" value="https://raw.githubusercontent.com/luc13-13/maven-releases/master" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="http://localhost:8081/repository/maven-public/" />
     </remote-repository>
   </component>
 </project>

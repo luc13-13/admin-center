@@ -13,7 +13,7 @@ public class StringModUtils {
     /**
      * 邮箱格式
      * \w+@ : @前可以有若干个大小写字母和数字,长度为1-16
-     * @([a-z]+\.){1,3} : 表示@后至少有一个、至多有三个 小写字母. 的格式，且每一个小写字母串长度不超过16
+     * @([a-z]+\.){1,3} : 表示@后至少有一个、至多有三个 ‘小写字母.’ 的格式，且每一个小写字母串长度不超过16
      *                   例如 username@mail.com uname@mail.qq.com uname@mail.qq.ed.com
      * c(om|n)$: 必须以com或cn结尾
      */

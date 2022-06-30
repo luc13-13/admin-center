@@ -10,4 +10,6 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public interface LoginSaveService {
+    // 保存用户登录日志：username,设备,操作系统,ip地址,登入时间,退出时间
+    void save(String username, String ip);
 }

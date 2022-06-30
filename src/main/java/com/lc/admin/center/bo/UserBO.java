@@ -1,28 +1,27 @@
-package com.lc.admin.center.model;
+package com.lc.admin.center.bo;
 
-import java.math.BigDecimal;
 import java.util.Date;
 import java.io.Serializable;
+import java.util.Set;
 
-import javafx.scene.control.Pagination;
-import lombok.Builder;
 import lombok.Data;
+import lombok.Builder;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 /**
- * 顾客账号信息表(CustomerAccount)
+ * 顾客账号信息表(User)业务对象
  *
  * @author lucheng
- * @since 2021-12-10 16:28:33
+ * @since 2022-04-28 23:14:35
  */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class CustomerAccountDO implements Serializable {
+public class UserBO implements Serializable {
 
-    private static final long serialVersionUID = -13183728738763436L;
+    private static final long serialVersionUID = 867049320272770533L;
 
     /*** 主键id */    
     private Long id;
@@ -45,13 +44,19 @@ public class CustomerAccountDO implements Serializable {
     /*** 顾客是否注销,0 已注销, 1 未注销 */    
     private Integer invalid;
 
+    /*** 登陆来源 */    
+    private String loginSource;
+
     /*** 创建时间 */    
     private Date dtCreated;
 
     /*** 创建时间 */    
     private Date dtModified;
 
-    /*** 创建时间 */    
-    private Date dtCreate;
+    /*** 用户身份类型  1访客 2注册用户  */
+    private Set<String> roles;
+
+    /** 用户权限集合*/
+    private Set<String> permissions;
 
 }

@@ -1,18 +1,40 @@
 server:
-  port: 8080
-
+  port: 8808
 
 spring:
   application:
     name: admin-center
   datasource:
-    url: jdbc:mysql://localhost:3306/admin_center?useSSL=false&useUnicode=true&allowPublicKeyRetrieval=true&serverTimezone=UTC&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/auth-center?useSSL=false&useUnicode=true&allowPublicKeyRetrieval=true&serverTimezone=UTC&characterEncoding=UTF-8
     username: root
     password: Lc123456@
 
-mybatis:
-  mapper-locations: classpath:mapper/*.xml
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
 debug: true
-logging:X
-  level: info
+logging:
+  level:
+    root: info
   config: classpath:logback-spring.xml
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
+my-shiro:
+  max-batch-insert-num: 10
+  shiro-properties:
+    sessiotimeout: PT86400s
+    enable-redis-cache: true
+    login-url: /login
+    success-url: /index
+    unauthorized-url: /unauthorized
+    logout-url: /logout
+    anon-url: /test/**,/febs/**,/img/**,/layui/**,/json/**,/images/captcha,/register
+
