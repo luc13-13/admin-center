@@ -18,6 +18,7 @@ public class RegisterController {
 
     @GetMapping("/register")
     public WebResult<String> baseRegister() {
+
         return WebResult.successData("注册测试");
     }
 }
